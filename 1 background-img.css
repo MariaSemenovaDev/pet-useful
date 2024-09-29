@@ -1,0 +1,45 @@
+
+
+
+/* как сделать изображения адаптивными если они заданы фоном для какого-то элемента */
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border: 1px solid red;
+    /* вспомогательный бордер чтобы видеть границы */
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqU3DFs5utBD8GqhwYHVYhxow0gVF1o7UtrA&s);
+    
+    /* лучше задавать картинки в формате webp  */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+/* основные свойства: 1 чтобы картинка не дублировалась, 2 картинка занимает всё пространство, 3 при изменении размера, основная часть картнки всегда по центру */
+
+    min-height: 600px;
+    max-width: 600px;
+    width: 100%;
+
+    /* высоту всегда задаем обязательно, иначе не увидим картинку, лучше с приставкой min,
+    max-width: 600px;
+    width: 100%;   - значения для адаптива */
+
+}
+
+span {
+    border: 1px solid blue;
+}

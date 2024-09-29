@@ -1,0 +1,23 @@
+
+
+
+/* как подгрузить разные форматы изображений
+
+через тег picture и source media в html
+
+если изображение больше 800px (минимум 800px) то покажет чмоню, если изображение меньше 799px (максимальная ширина 799px), то покажет кот смотрит
+*/
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
